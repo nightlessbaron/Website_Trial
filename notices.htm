@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="notices.css">
+</head>
+<body>
+<button class="accordion">Admissions</button>
+<div class="panel">
+  <p>Admission to IIITN is only through the JEE Mains examination.</p>
+</div>
+<button class="accordion">Academics</button>
+<div class="panel">
+  <ul style="list-style-type:circle;">
+	<li>B.Tech first semester timetable</li>
+	<li>B.Tech third semester timetable</li>
+	<li>Academic calendar and rules</li>
+  </ul>
+</div>
+
+<button class="accordion">Fees</button>
+<div class="panel">
+  <p>This contains the latest info about fees.</p>
+</div>
+
+<button class="accordion">Hostel</button>
+<div class="panel">
+  <p>This contains important info about hostel and mess.</p>
+</div>
+<button class="accordion">Scholarship</button>
+<div class="panel">
+  <p>This contains the latest info about scholarship and regarding notices.</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+
+</script>
+</body>

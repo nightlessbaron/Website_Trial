@@ -1,0 +1,51 @@
+@media screen and (max-width: 800px) {
+   .news_events, .ac_container{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+
+.header_pg{
+  background-color: #4d5940;
+  font-weight: bolder;
+  height: 150px;
+  width: 100%;
+  text-align: left;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  float: left;
+  overflow: auto;
+}
+
+.header_logo{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.header_name{
+	width: 400px;
+	height: auto;
+  display: inline-block;
+	vertical-align: top;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+  padding: 20px 25px;
+}
+
+.header_name p{
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0;
+  }
+
+  .header_name p span{
+   display: block;
+   line-height: 1;
+  }
+
+.brand_name{
+   width: 100px;
+   height: 100px;
+}

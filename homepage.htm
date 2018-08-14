@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="notices.css">
+<link rel="stylesheet" href="quick_link.css" type="text/css">
+<link rel="stylesheet" href="homepage.css" type="text/css">
+<link rel="stylesheet" href="footer.css" type="text/css">
+<link rel="stylesheet" href="news_eve.css" type="text/css">
+<link rel="stylesheet" href="research_homepg.css" type="text/css">
+<link rel="stylesheet" href="body_container.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Home Page | IIITN</title>
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+<link href="achievements.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- Remove this after header is made -->
+<div class="header_pg"><table><tr>
+ <td><div class="brand_name"><img src="iiit_logo.jpg" alt="Logo" class="header_logo"></div></td>
+ <td><div class="header_name">  <p><span>Indian Institute of</span>Information Technology,<span> Nagpur</span></p></div></td></tr>
+</table></div>
+
+
+<div class="sticky_quicklink" id="mySticky_QuickLink">
+  <a href="#" class="active">Recruitment</a>
+  <a href="#">Location</a>
+  <a href="#">Faculty</a>
+  <a href="#">Placements</a>
+  <a href="#">Programmes Offered</a>
+  <a href="#">Webmail</a>
+  <a href="#">Grievance Cell</a>
+  <a href="#">Departments</ |a
+  <a href="#">Facilities</a>
+  <a href="#">Schemes</a>
+  <a href="#">Syllabus</a>
+  <a href="#">Staff</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySticky_QuickLink");
+    if (x.className === "sticky_quicklink") {
+        x.className += " responsive";
+    } else {
+        x.className = "sticky_quicklink";
+    }
+}
+</script>
+
+<div class="body_container">
+<div class="ac_container">
+<div class="heading"><b> ACHIEVEMENTS</b></div>
+<div><ul id="list" style="padding-right: 20px;">
+<li> Parth Wazurkar, student of CSE at IIITN has been selected for a summer internship with Google, through GSOC(Google Summer Of Code)</li>
+<hr>
+<li> IIITN students bag 11 medals at the inter- IIIT sports festival held at IIITDM,Gwalior.</li>
+</ul>
+</div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<div class= "news_events">
+  <div id="Events" class="tabcontent">
+    <h3>Events</h3>
+    <p><ul><li>National Level Technical Festival, TantraFiesta and Cultural Festival Abhivyakti was held in 2017</li></ul></p>
+  </div>
+
+<div id="EventReports" class="tabcontent">
+  <h3>News</h3>
+  <p>All the event reports shall be displayed here.</p>
+</div>
+
+<div id="EventPhotos" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Maybe a slideshow of event photos.</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>The latest news about the upcoming events and seminars, etc.</p>
+</div>
+<div id="Tender" class="tabcontent">
+	<h3>Tenders @ IIITN</h3>
+	<p> These are the tenders </p>
+</div>
+
+<button class="tablink" onclick="openPage('Events', this, '#879c7c')" id="defaultOpen">Events</button>
+<button class="tablink" onclick="openPage('EventReports', this, '#879c7c')" style="padding-right: 0px; padding-left: 0px">Event Reports</button>
+<button class="tablink" onclick="openPage('EventPhotos', this, '#879c7c')">Event Photos</button>
+<button class="tablink" onclick="openPage('News', this, '#879c7c')" style="padding-right: 0px; padding-left: 0px"><span>IIITN in News<span></button>
+<button class="tablink" onclick="openPage('Tender', this, '#879c7c')">Tenders</button>
+</div>
+<script>
+
+function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<button class="accordion">Admissions</button>
+<div class="panel">
+  <p>Admission to IIITN is only through the JEE Mains examination.</p>
+</div>
+<button class="accordion">Academics</button>
+<div class="panel">
+  <ul style="list-style-type:circle;">
+	<li>B.Tech first semester timetable</li>
+	<li>B.Tech third semester timetable</li>
+	<li>Academic calendar and rules</li>
+  </ul>
+</div>
+
+<button class="accordion">Fees</button>
+<div class="panel">
+  <p>This contains the latest info about fees.</p>
+</div>
+
+<button class="accordion">Hostel</button>
+<div class="panel">
+  <p>This contains important info about hostel and mess.</p>
+</div>
+<button class="accordion">Scholarship</button>
+<div class="panel">
+  <p>This contains the latest info about scholarship and regarding notices.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
+
+</script>
+
+
+<!-- This is for research -->
+<div class="research_cont">
+		<h2>Research</h2>
+      <div class="research_topic">
+             <div class="research_sect1"><img src="res1.jpg" alt="Research" class="img_research"></div>
+             <div class="research_sect2">Information on research topic 1<br>
+							 The oppressive cloud that had hung above Soul Sect for the longest time finally loosened up a lot.
+							 Lei Qianfeng felt a lot more relaxed but for some reason he couldn't shake the vague feeling that
+							 something was wrong, even though he couldn't figure out what was nagging him. He didn't have the
+							 time to consider his instinct carefully, however. Right now, his first priority was of course to
+							 refine the divine pellet he got from Poison Saint Blackheart!<br><a href="#">Read More...</a></div>
+      </div>
+
+      <div class="research_topic">
+             <div class="research_sect1"><img src="res2.jpg" alt="Research" class="img_research"></div>
+             <div class="research_sect2">Information on research topic 2<br>
+							 The oppressive cloud that had hung above Soul Sect for the longest time finally loosened up a lot.
+							 Lei Qianfeng felt a lot more relaxed but for some reason he couldn't shake the vague feeling that
+							 something was wrong, even though he couldn't figure out what was nagging him. He didn't have the
+							 time to consider his instinct carefully, however. Right now, his first priority was of course to
+							 refine the divine pellet he got from Poison Saint Blackheart! <br><a href="#">Read More...</a></div>
+      </div>
+
+      <div class="research_topic">
+				  <div class="research_sect1"><img src="res3.jpg" alt="Research" class="img_research"></div>
+				  <div class="research_sect2">Information on research topic 3<br>
+						The oppressive cloud that had hung above Soul Sect for the longest time finally loosened up a lot.
+						Lei Qianfeng felt a lot more relaxed but for some reason he couldn't shake the vague feeling that
+						something was wrong, even though he couldn't figure out what was nagging him. He didn't have the
+						time to consider his instinct carefully, however. Right now, his first priority was of course to
+						refine the divine pellet he got from Poison Saint Blackheart! <br><a href="#">Read More...</a></div>
+      </div>
+
+			<div class="research_topic">
+				<div class="research_sect1"><img src="res4.jpg" alt="Research" class="img_research"></div>
+				<div class="research_sect2">Information on research topic 4<br>
+					The oppressive cloud that had hung above Soul Sect for the longest time finally loosened up a lot.
+					Lei Qianfeng felt a lot more relaxed but for some reason he couldn't shake the vague feeling that
+					something was wrong, even though he couldn't figure out what was nagging him. He didn't have the
+					time to consider his instinct carefully, however. Right now, his first priority was of course to
+					refine the divine pellet he got from Poison Saint Blackheart! <br><a href="#">Read More...</a></div>
+      </div>
+  </div>
+
+</div>
+
+<pre>
+
+
+<!-- This is for footer -->
+
+
+</pre>
+</div>
+	<div class="foot_clg">
+      <div class="foot_cont1">
+        <div class="foot_left">
+          <div class="foot_logo"><img src="iiit_logo.jpg" alt="Logo" class="logo"></div>
+          <h3>Indian<span>&nbsp;Institute</span>&nbsp;of&nbsp;Information<span>&nbsp;Technology</span></h3>
+          <p class="foot_sitemap">
+            <a href="#">Home</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Administration</a> |
+            <a href="#">Academics</a> |
+            <a href="#">Research</a> |
+            <a href="#">Student's Corner</a> |
+            <a href="#">and blah blah blah</a> |
+          </p>
+        </div>
+        <div class="foot_center">
+          <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>RTTC, BSNL, Near TV Tower,</span> Besides Balaji Temple Seminary Hills,<span> Nagpur, Maharashtra</span><span> 440006</span></p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>phone no....</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#">email id</a></p>
+      </div>
+        </div>
+        <div class="foot_right">
+          <div id="map"></div>
+
+        <script>
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var myCenter = new google.maps.LatLng(21.164774, 79.054529);
+                var mapOptions = {center: myCenter, zoom: 15.5};
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+                var marker = new google.maps.Marker({
+                position: myCenter,
+                animation: google.maps.Animation.BOUNCE
+             });
+             marker.setMap(map);
+           }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0LgAiZv8AOb97egZ89jQhD-VoYGz0FBM&callback=myMap"></script>
+
+        <div class="foot_top"><a href="#Top"><i class="fa fa-chevron-up"></i>&nbsp;Top</a></div>
+        </div>
+      </div>
+      <div class="foot_cont2">
+        <h2>Our Partners</h2>
+        <div class="foot_part part1 col-lg-6 col-md-12"><img class="part_logo" src="ADCC.png" alt="ADCC"></div>
+        <div class="foot_part part2 col-lg-6 col-md-12"><img class="part_logo" src="MahaShashan.jpg" alt="MahaShashan"></div>
+        <div class="foot_part part4 col-lg-6 col-md-12"><img class="part_logo" src="TCS.png" alt="TCS"></div>
+        <div class="foot_part part3 col-lg-6 col-md-12"><img class="part_logo" src="mhrdlogonew.png" alt="MHRD"></div>
+      </div>
+    <div class="foot_cont3">
+         IIIT Nagpur &copy; 2018copyrights reserved
+    </div>
+   </div>
+</body>
+</html>

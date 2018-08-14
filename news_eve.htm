@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Made by Rutvik Page-->
+
+<!-- This is for news and events -->
+<html>
+<head>
+<link rel="stylesheet" href="news_eve.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+</head>
+<body>
+<div class= "news_events">
+
+<div id="Events" class="tabcontent">
+  <h3>Events</h3>
+  <p>Events is where the heart is..</p>
+</div>
+
+<div id="EventReports" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="EventPhotos" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Who we are and what we do.</p>
+</div>
+<div id="Tender" class="tabcontent">
+	<h3>Tenders @ IIITN</h3>
+	<p> These are the tenders </p>
+</div>
+
+<button class="tablink" onclick="openPage('Events', this, '#4e77b7')" id="defaultOpen">Events</button>
+<button class="tablink" onclick="openPage('EventReports', this, '#4e77b7')" style="padding-right: 0px; padding-left: 0px">Event Reports</button>
+<button class="tablink" onclick="openPage('EventPhotos', this, '#4e77b7')">Event Photos</button>
+<button class="tablink" onclick="openPage('News', this, '#4e77b7')" style="padding-right: 0px; padding-left: 0px"><span>IIITN in News<span></button>
+<button class="tablink" onclick="openPage('Tender', this, '#4e77b7')">Tenders</button>
+</div>
+<script>
+
+function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>

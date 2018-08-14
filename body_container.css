@@ -1,0 +1,25 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	background-color: #e6e9e2;
+}
+
+.body_container{
+	  width: 95%;
+	  margin: 2.5%;
+    height: auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 0px 14px;
+    line-height: 1.8;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+   .news_events, .ac_container{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }

@@ -1,0 +1,56 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+.news_events {
+  height: 30%;
+  margin: 0;
+  font-family: Arial;
+  width:50%;
+  box-sizing: border-box;
+  overflow: auto;
+  position: relative;
+  top: 0px;
+  left: 250px;
+  max-width:100%;
+  float: left;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  word-break: keep-all;
+  height: 25%;
+  display: inline;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: inline;
+  padding: 100px 20px;
+  height: auto;
+  width: 100%;
+}
+
+#Events {background-color: #4e77b7;}
+#EventReports {background-color: #4e77b7;}
+#EventPhotos {background-color: #4e77b7;}
+#News {background-color: #4e77b7;}
+#Tender{background-color: #4e77b7;}
+
+@media screen and (max-width: 800px) {
+  .news_events, .tablink, .tabcontent{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
